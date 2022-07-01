@@ -4,7 +4,7 @@
     <artifactId>app-layout-addon</artifactId>
     <groupId>com.github.appreciated</groupId>
     <modelVersion>4.0.0</modelVersion>
-    <version>gamma4_2304dev_bubblet</version>
+    <version>gamma42304dev_bubblet</version>
 
     <name>App Layout Add-on</name>
     <description>Integration of app-layout for Vaadin 21</description>

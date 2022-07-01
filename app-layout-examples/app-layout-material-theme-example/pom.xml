@@ -6,7 +6,7 @@
 
     <artifactId>app-layout-material-theme-example</artifactId>
     <name>App Layout Addon Examples - Material Theme</name>
-    <version>gamma4_2304dev_bubblet</version>
+    <version>gamma42304dev_bubblet</version>
     <groupId>com.github.appreciated.examples</groupId>
     <packaging>war</packaging>
 

@@ -6,7 +6,7 @@
 
     <name>App Layout Addon Examples - Plain</name>
     <artifactId>app-layout-plain-example</artifactId>
-    <version>gamma4_2304dev_bubblet</version>
+    <version>gamma42304dev_bubblet</version>
     <groupId>com.github.appreciated.examples</groupId>
     <packaging>war</packaging>
 

@@ -5,7 +5,7 @@
     <groupId>com.github.appreciated</groupId>
     <artifactId>app-layout-spring-example</artifactId>
     <name>App Layout Addon Examples - Spring</name>
-    <version>gamma4_2304dev_bubblet</version>
+    <version>gamma42304dev_bubblet</version>
     <packaging>jar</packaging>
 
     <properties>

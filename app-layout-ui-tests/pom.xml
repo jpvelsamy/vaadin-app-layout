@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.appreciated</groupId>
     <artifactId>app-layout-ui-tests</artifactId>
-    <version>gamma4_2304dev_bubblet</version>
+    <version>gamma42304dev_bubblet</version>
     <name>App Layout Add-on UI Tests</name>
     <packaging>war</packaging>
 
@@ -102,7 +102,7 @@
         <dependency>
             <groupId>com.github.appreciated</groupId>
             <artifactId>app-layout-addon</artifactId>
-            <version>gamma4_2304dev_bubblet</version>
+            <version>gamma42304dev_bubblet</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
