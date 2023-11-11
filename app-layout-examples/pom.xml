@@ -6,7 +6,7 @@
     <groupId>com.github.appreciated.examples</groupId>
     <artifactId>app-layout-examples</artifactId>
     <packaging>pom</packaging>
-    <version>gamma42304dev_bubblet</version>
+    <version>jamun_24</version>
     <name>App Layout Addon Examples</name>
 
     <organization>

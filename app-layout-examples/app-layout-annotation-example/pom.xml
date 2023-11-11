@@ -6,7 +6,7 @@
 
     <artifactId>app-layout-annotation-example</artifactId>
     <name>App Layout Addon Examples - Annotation</name>
-    <version>gamma42304dev_bubblet</version>
+    <version>jamun_24</version>
     <groupId>com.github.appreciated.examples</groupId>
     <packaging>war</packaging>
 
