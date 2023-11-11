@@ -32,15 +32,11 @@ import com.vaadin.flow.component.dialog.Dialog;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.component.page.Push;
-import com.vaadin.flow.component.page.Viewport;
 import com.vaadin.flow.component.radiobutton.RadioButtonGroup;
 import com.vaadin.flow.data.provider.ListDataProvider;
 import com.vaadin.flow.data.provider.Query;
 import com.vaadin.flow.data.renderer.TextRenderer;
 import com.vaadin.flow.function.SerializablePredicate;
-import com.vaadin.flow.theme.Theme;
-import com.vaadin.flow.theme.lumo.Lumo;
 
 import java.util.Arrays;
 import java.util.function.Consumer;
@@ -53,10 +49,6 @@ import static com.github.appreciated.app.layout.entity.Section.HEADER;
  * The main view contains a button and a template element.
  */
 
-@Push
-@Theme(value = Lumo.class, variant = Lumo.DARK)
-//@Theme(value = Material.class, variant = Material.LIGHT)
-@Viewport("width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes")
 public class MainLayout extends AppLayoutRouterLayout {
     private DefaultNotificationHolder notificationHolder = new DefaultNotificationHolder(newStatus -> {/*Do something with it*/});
     private DefaultBadgeHolder badgeHolder = new DefaultBadgeHolder();

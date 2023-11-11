@@ -6,7 +6,7 @@
     <groupId>com.github.appreciated.examples</groupId>
     <artifactId>app-layout-examples</artifactId>
     <packaging>pom</packaging>
-    <version>4.0.0-SNAPSHOT</version>
+    <version>gamma42304dev_bubblet</version>
     <name>App Layout Addon Examples</name>
 
     <organization>
@@ -19,9 +19,11 @@
     </prerequisites>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <vaadin.version>14.6.8</vaadin.version>
+
+        <vaadin.version>23.0.4</vaadin.version>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+
     </properties>
 
     <modules>
@@ -91,7 +93,7 @@
         <dependency>
             <groupId>com.github.appreciated</groupId>
             <artifactId>app-layout-addon</artifactId>
-            <version>4.0.0-SNAPSHOT</version>
+            <version>gamma4_2304dev_bubblet</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

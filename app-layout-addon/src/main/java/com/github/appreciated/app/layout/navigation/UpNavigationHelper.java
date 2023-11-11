@@ -6,6 +6,7 @@ import com.vaadin.flow.component.UI;
 import com.vaadin.flow.router.Location;
 import com.vaadin.flow.router.RouteConfiguration;
 import com.vaadin.flow.router.RouteData;
+import com.vaadin.flow.router.RouteParameters;
 
 import java.io.Serializable;
 import java.util.*;
@@ -88,6 +89,7 @@ public class UpNavigationHelper implements Serializable {
         Set<RouteData> routes = getUpNavigationHelper().registeredRoutes.keySet();
         Optional<RouteSimilarity> result = routes.stream()
                 .map(s -> new RouteSimilarity(s, currentRoute))
+                .filter(routeSimilarity -> routeSimilarity.getSimilarity() > 0)
                 .max(Comparator.comparingInt(RouteSimilarity::getSimilarity));
 
         return result.filter(routeSimilarity -> routeSimilarity.getRoute() == className).isPresent();
@@ -98,14 +100,14 @@ public class UpNavigationHelper implements Serializable {
      *
      * @param className
      */
-    public static void registerNavigationRoute(Class<? extends Component> className) {
-        getUpNavigationHelper().register(className);
+    public static void registerNavigationRoute(Class<? extends Component> className, RouteParameters parameters) {
+        getUpNavigationHelper().register(className, parameters);
     }
 
-    public void register(Class<? extends Component> className) {
+    public void register(Class<? extends Component> className, RouteParameters parameters) {
         getRoutesForClassName(className)
                 .forEach(routeData -> {
-                    registeredRoutes.put(routeData, RouteConfiguration.forSessionScope().getUrl(className));
+                    registeredRoutes.put(routeData, RouteConfiguration.forSessionScope().getUrl(className, parameters));
                 });
     }
 
